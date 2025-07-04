@@ -60,6 +60,8 @@ return { -- Fuzzy Finder (files, lsp, etc)
 					"%.a", -- C/C++/Zig Object Files
 					"%.o", -- C Static Libraries
 					"%.log", -- logfiles
+					"[\\/].git[\\/]", -- match .git/ and .git\ across OSes
+					"^.git[\\/]", -- match .git folder at root level
 					"%.tmp",
 					"%.bak",
 					"%.exe", -- Windows binary

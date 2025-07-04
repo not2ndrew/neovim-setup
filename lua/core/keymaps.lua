@@ -43,9 +43,9 @@ vim.keymap.set("n", "<C-l>", ":wincmd l<CR>", opts)
 --vim.keymap.set("n", "<leader>q", ":tabclose<CR>", opts) -- Close tab
 
 -- Terminal
-vim.keymap.set("n", "<leader>t", ":split | terminal<CR>", opts) -- Create horizontal terminal tab
-vim.keymap.set("t", "<leader>q", "<C-\\><C-n>:bd!<CR>", opts) -- Close Terminal
-vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], opts) -- MUST BE IN TERMINAL MODE! Move from Terminal mode to Normal mode
+-- vim.keymap.set("n", "<leader>t", ":split | terminal<CR>", opts) -- Create horizontal terminal tab
+-- vim.keymap.set("t", "<leader>q", "<C-\\><C-n>:bd!<CR>", opts) -- Close Terminal
+-- vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], opts) -- MUST BE IN TERMINAL MODE! Move from Terminal mode to Normal mode
 
 -- Toggle line wrapping
 vim.keymap.set("n", "<leader>lw", "<cmd>set wrap!<CR>", opts)
