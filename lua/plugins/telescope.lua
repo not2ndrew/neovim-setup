@@ -101,6 +101,10 @@ return { -- Fuzzy Finder (files, lsp, etc)
 		vim.keymap.set("n", "<leader>s.", builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
 		vim.keymap.set("n", "<leader><leader>", builtin.buffers, { desc = "[ ] Find existing buffers" })
 
+		-- Search for symbols
+		vim.keymap.set("n", "<leader>ds", builtin.lsp_document_symbols, {})
+		vim.keymap.set("n", "<leader>ws", builtin.lsp_workspace_symbols, {})
+
 		-- Slightly advanced example of overriding default behavior and theme
 		vim.keymap.set("n", "<leader>/", function()
 			-- You can pass additional configuration to Telescope to change the theme, layout, etc.

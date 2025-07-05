@@ -24,7 +24,6 @@ require("lazy").setup({
 	require("plugins.autoformat"),
 	require("plugins.alpha"),
 	require("plugins.autopair"),
-	require("plugins.snip"),
 	require("plugins.toggleterm"),
 }, {
 	lazy = false,
